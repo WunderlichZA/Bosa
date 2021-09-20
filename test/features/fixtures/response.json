@@ -1,0 +1,117 @@
+{
+  "coord": {
+    "lon": 18.53,
+    "lat": -33.9493
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 284.38,
+    "feels_like": 283.41,
+    "temp_min": 280.98,
+    "temp_max": 284.38,
+    "pressure": 1029,
+    "humidity": 71
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 6.17,
+    "deg": 170
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1630971862,
+  "sys": {
+    "type": 1,
+    "id": 1899,
+    "country": "ZA",
+    "sunrise": 1630990579,
+    "sunset": 1631032312
+  },
+  "timezone": 7200,
+  "id": 3362864,
+  "name": "Pinelands",
+  "cod": 200,
+  "list": [
+    {
+      "dt": 1632171600,
+      "main": {
+        "temp": 286.32,
+        "feels_like": 284.24,
+        "temp_min": 286.32,
+        "temp_max": 286.32,
+        "pressure": 1020,
+        "sea_level": 1020,
+        "grnd_level": 871,
+        "humidity": 21,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "clouds": {
+        "all": 0
+      },
+      "wind": {
+        "speed": 3.83,
+        "deg": 205,
+        "gust": 8.84
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2021-09-20 21:00:00"
+    },
+    {
+      "dt": 1632182400,
+      "main": {
+        "temp": 285.57,
+        "feels_like": 283.44,
+        "temp_min": 284.08,
+        "temp_max": 285.57,
+        "pressure": 1020,
+        "sea_level": 1020,
+        "grnd_level": 870,
+        "humidity": 22,
+        "temp_kf": 1.49
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "clouds": {
+        "all": 0
+      },
+      "wind": {
+        "speed": 3.33,
+        "deg": 206,
+        "gust": 5.84
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2021-09-21 00:00:00"
+    }
+  ]
+}
