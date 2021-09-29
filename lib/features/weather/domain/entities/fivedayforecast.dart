@@ -5,7 +5,7 @@ import 'package:flutter_projects/features/weather/domain/entities/list_item.dart
 class FiveDayForecastResponse extends Equatable {
   final City? city;
   final int? cnt;
-  final String? cod;
+  final int? cod;
   final List<ListItem>? list;
   final int? message;
 

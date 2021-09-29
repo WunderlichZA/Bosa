@@ -9,7 +9,7 @@ class FiveDayForecastModel extends FiveDayForecastResponse {
   FiveDayForecastModel({
     City? city,
     int? cnt,
-    String? cod,
+    int? cod,
     List<ListItem>? list,
     int? message,
   }) : super(city: city, cnt: cnt, cod: cod, list: list, message: message);
@@ -19,8 +19,8 @@ class FiveDayForecastModel extends FiveDayForecastResponse {
       city: json['city'] != null ? CityModel.fromJson(json['city']) : null,
       cnt: json['cnt'],
       cod: json['cod'],
-      list: json['list']
-          .map((e) => ListItemModel.fromJson(e as Map<String, dynamic>))
+      list: (json['list'] as List)
+          .map((e) => ListItemModel.fromJson(e))
           .toList(),
       message: json['message'],
     );

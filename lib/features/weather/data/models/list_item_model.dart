@@ -43,8 +43,8 @@ class ListItemModel extends ListItem {
       pop: json['pop'],
       sys:json['sys'] != null ? SysModel.fromJson(json['sys']) : null,
       visibility: json['visibility'],
-      weather: json['weather']
-          .map((e) => WeatherModel.fromJson(e as Map<String, dynamic>))
+      weather: (json['weather'] as List)
+          .map((e) => WeatherModel.fromJson(e))
           .toList(),
       wind: json['wind'] != null ? WindModel.fromJson(json['wind']) : null,
     );
