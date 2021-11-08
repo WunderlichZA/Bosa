@@ -9,12 +9,12 @@ abstract class WeatherRemoteDataSource {
   /// Calls the https://api.openweathermap.org/data/2.5/weather?{lat$lon$apikey} endpoint.
   ///
   /// Throws a [ServerException] for all error codes.
-  Future<WeatherResponseModel> getWeatherUpdate(double lat, double lon, String apiKey);
+  Future<WeatherResponseModel> getWeatherUpdate(double? lat, double? lon, String? apiKey);
 
   /// https://api.openweathermap.org/data/2.5/weather?{lat$lon$apikey} endpoint.
   ///
   /// Throws a [ServerException] for all error codes.
-  Future<FiveDayForecastModel> getFiveDayForecast(double lat, double lon, String apiKey);
+  Future<FiveDayForecastModel> getFiveDayForecast(double? lat, double? lon, String? apiKey);
 }
 
 class WeatherRemoteDataSourceImpl extends WeatherRemoteDataSource{
@@ -22,7 +22,7 @@ class WeatherRemoteDataSourceImpl extends WeatherRemoteDataSource{
 
   WeatherRemoteDataSourceImpl({required this.client});
   @override
-  Future<FiveDayForecastModel> getFiveDayForecast(double lat, double lon, String apiKey) async {
+  Future<FiveDayForecastModel> getFiveDayForecast(double? lat, double? lon, String? apiKey) async {
     final response = await client?.post(
       Uri(path: 'http://api.openweathermap.org/data/2.5/forecast?lat=$lat&lon=$lon&appid=$apiKey'),
       headers: {
@@ -37,7 +37,7 @@ class WeatherRemoteDataSourceImpl extends WeatherRemoteDataSource{
   }
 
   @override
-  Future<WeatherResponseModel> getWeatherUpdate(double lat, double lon, String apiKey) async {
+  Future<WeatherResponseModel> getWeatherUpdate(double? lat, double? lon, String? apiKey) async {
     final response = await client?.post(
       Uri(path: 'http://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lon&appid=$apiKey'),
       headers: {
